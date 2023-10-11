@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f5d308;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+label{
+  font-weight: 600;
+}
+#search {
+  width: 30rem;
+  margin-top: 30px;
+  max-height: 40px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sort{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+img.card-img {
+  margin: auto;
+  width: auto;
+  height: 12rem;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.card {
+  text-align: center;
+  border-radius: 8px;
+  width: 18rem;
+  height: 20rem;
+  box-shadow: 0px 0px 30px #000;
+}
+.modal-body{
+  align-self: center;
+}
+.modal-footer{
+  align-self: flex-start;
+}
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sort{
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
